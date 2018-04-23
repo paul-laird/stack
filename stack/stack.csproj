@@ -55,6 +55,7 @@
     <Compile Include="NodeStack.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueueOfInt.cs" />
     <Compile Include="StackOfInt.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

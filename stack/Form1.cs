@@ -13,10 +13,11 @@ namespace stack
     public partial class Form1 : Form
     {
         NodeStack s;
-        //StackOfInt s;
+        QueueOfInt q;
         public Form1()
         {
-            s = new NodeStack();  //new StackOfInt(10);
+            s = new NodeStack();
+            q=new QueueOfInt(10);
             InitializeComponent();
         }
 
@@ -28,6 +29,17 @@ namespace stack
         private void Pop_Click(object sender, EventArgs e)
         {
             Output.Text = "" + s.pop();
+        }
+
+        private void Enqueue_Click(object sender, EventArgs e)
+        {
+            q.enqueue(int.Parse(Input.Text));
+
+        }
+
+        private void Dequeue_Click(object sender, EventArgs e)
+        {
+            Output.Text = "" + q.dequeue();
         }
     }
 }
